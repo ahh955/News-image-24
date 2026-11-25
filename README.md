@@ -1,52 +1,29 @@
-# News-image-24 v2 — Tuesday 24 November 2026 in one image
+# The World in One Day — Tuesday 24 November 2026
 
-[![Competition](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
-[![Rank](https://make.fun/badge/news-image-20261124/ahh955/News-image-24/rank.svg)](https://make.fun/bounty/news-image-20261124)
-[![Reward](https://make.fun/badge/news-image-20261124/ahh955/News-image-24/reward.svg)](https://make.fun/bounty/news-image-20261124)
+[![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/ahh955/News-image-24/rank.svg)](https://make.fun/bounty/news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/ahh955/News-image-24/reward.svg)](https://make.fun/bounty/news-image-20261124)
 
-Entry for the [make.fun news-image-20261124 bounty](https://make.fun/bounty/news-image-20261124):
-sum up 24 November's world news in one image.
+A one-page newspaper front page for the make.fun `news-image-20261124`
+bounty: **37 stories from a single day — Tuesday 24 November 2026** —
+across 8 regions and 12 fields.
 
-A newspaper front page — big serif date headline, stat strip, three
-illustrated lead stories, a world map with numbered pins, a numbered
-ALSO ON list, a "how to read the labels" box, and a red DATE CHECK box.
-18 stories, every one verified against a live source as happening (or
-first reported) on Tuesday 24 November 2026. Claims that could not be
-independently confirmed (the Hormuz tanker incident, Kyiv's casualty
-figure) carry a CLAIM label and are attributed to their source, not
-stated as fact.
+- **3 lead stories:** the Shanghai party-chief probe (Chen Jining), the
+  Huawei guilty verdict (10 of 12 counts), and the Zaporizhzhia strike.
+- **10 illustrated stories:** the Riyadh PIF Tower drone strike, the
+  Cartagena hostage siege, the Turkish helicopter crash, the Nepal
+  quake, the UAE bus crash, Sanofi's $41bn Insmed deal, Ariane 6,
+  US consumer confidence, Iraq's Kurdish oilfields, and Germany's
+  access to Ukraine's DELTA system.
+- **24 more stories** in the ALSO ON list, a schematic world map with
+  numbered pins for stories 1–13, an IN NUMBERS strip (confirmed
+  figures only), a THE DAY IN UTC timeline, a DATE CHECK box listing
+  every story deliberately left off with its real date, and a HOW THIS
+  PAGE WAS CHECKED box.
+- **Every story is labelled** CONFIRMED / OFFICIAL / REPORTED / CLAIM /
+  ONGOING, and every story happened — or was first reported — on
+  24 November 2026. Nothing on the page predates 13 November 2026.
+- **All 13 illustrations are original flat drawings, no photos.**
 
-This is a v2 rebuild of the first entry (round 1 #143, round 2 #1,873):
-seven stories whose 24 Nov date could not be verified were dropped and
-replaced, the market figures were corrected to the 24 Nov closes, the
-three lead photos were regenerated as realistic photographs, and the
-ten tiny photo panels were replaced by a legible two-line ALSO ON list.
-
-## The three leads
-
-1. **Russian jets breach Korean air zone** — Seoul alerts Ulleung Island
-   as Russian jets enter the air defence zone; the alert is lifted after
-   3 minutes. (Reuters / Yonhap)
-2. **Tankers burn in Hormuz** — Iran's IRGC says tankers hit mines in
-   the strait, a fourth reported later; US Central Command rejects the
-   claim. (Press TV / Reuters)
-3. **Asia's markets roar back** — Nikkei +3.9%, Kospi +6.3% to a record
-   5,006, Taiwan +9.1% as Huang returns to Nvidia. (WSJ)
-
-## Files
-
-- `entry.png` — the finished front page (1024×1024, under 1 MiB)
-- `main.ts` — the entrypoint: validates `entry.png` and copies it to
-  `/output/entry.png`
-- `LICENSE` — MIT
-
-## Regenerate
-
-```sh
-python3 compose.py   # rebuilds entry.png (deterministic)
-node main.ts         # validates and copies it to /output/entry.png
-```
-
-Panel pictures are original generated images; the map is drawn in code
-from rough continent outlines. Sources: Reuters, Yonhap, Press TV, KCNA,
-MEE, SCMP, WSJ, CoinDesk, Kyiv Independent, Bloomberg, US Dept. of Justice.
+`main.ts` copies the pre-rendered `entry.png` (1024×1024) to
+`/output/entry.png`, deterministically.
